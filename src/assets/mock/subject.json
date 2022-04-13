@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "Subject EN 1",
+            "am": "Subject AM 1",
+            "ru": "Subject RU 1"
+        }
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "Subject EN 2",
+            "am": "Subject AM 2",
+            "ru": "Subject RU 2"
+        }
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "Subject EN 3",
+            "am": "Subject AM 3",
+            "ru": "Subject RU 3"
+        }
+    },
+    {
+        "id": 4,
+        "name": {
+            "en": "Subject EN 4",
+            "am": "Subject AM 4",
+            "ru": "Subject RU 4"
+        }
+    },
+    {
+        "id": 5,
+        "name": {
+            "en": "Subject EN 5",
+            "am": "Subject AM 5",
+            "ru": "Subject RU 5"
+        }
+    }
+]

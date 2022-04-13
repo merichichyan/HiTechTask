@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "School EN 1",
+            "am": "School AM 1",
+            "ru": "School RU 1"
+        }
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "School EN 2",
+            "am": "School AM 2",
+            "ru": "School RU 2"
+        }
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "School EN 3",
+            "am": "School AM 3",
+            "ru": "School RU 3"
+        }
+    },
+    {
+        "id": 4,
+        "name": {
+            "en": "School EN 4",
+            "am": "School AM 4",
+            "ru": "School RU 4"
+        }
+    },
+    {
+        "id": 5,
+        "name": {
+            "en": "School EN 5",
+            "am": "School AM 5",
+            "ru": "School RU 5"
+        }
+    }
+]

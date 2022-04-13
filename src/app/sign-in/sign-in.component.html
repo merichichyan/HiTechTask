@@ -1,0 +1,42 @@
+<div class="sign-in-form">
+
+    <div class="sign-in-form-header">
+        <h1>{{ 'sign_in.title.h1' | translate }}</h1>
+        <p>{{ 'sign_in.title.p' | translate }}</p>
+    </div>
+
+
+    <div class="sign-in">
+        <form [formGroup]="sign_in_form">
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{ 'sign_in.form.email' | translate }}</mat-label>
+                <input matInput placeholder="pat@example.com" formControlName="email" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{ 'sign_in.form.pass' | translate }}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{!hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <a routerLink="/forgot-pass" class="forgot-password">{{ 'sign_in.form.forgot_pass' | translate }}?</a>
+        </form>
+
+        <button mat-raised-button>{{ 'header.Sign_in' | translate }}</button>
+    </div>
+
+    <div class="successful-recovery-pass" *ngIf="s.rec_pass">
+        <mat-icon>check_circle_outline</mat-icon>
+        <p>{{ 'sign_in.successful-recovery-pass' | translate }}</p>
+    </div>
+
+    <div class="choosing-role">
+        <p>{{ 'sign_in.role.reg' | translate }}</p>
+        <button mat-stroked-button routerLink="/teacher-register">{{ 'sign_in.role.teacher' | translate }}</button>
+        <button mat-stroked-button routerLink="/donor-register">{{ 'sign_in.role.donor' | translate }}</button>
+    </div>
+</div>

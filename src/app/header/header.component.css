@@ -1,0 +1,248 @@
+.header {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #34C88A;
+}
+
+.header__logo {
+    margin-left: 40px;
+}
+
+.header-mobile,
+.header__burger {
+    display: none;
+}
+
+.menu__list {
+    gap: 48px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.list__item a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    font-family: 'Assistant';
+    text-transform: uppercase;
+}
+
+.list__item.active {
+    padding: 2px;
+    border-bottom: 2px solid #FFF;
+}
+
+.language__menu {
+    top: 20px;
+    right: 70px;
+    position: absolute;
+}
+
+.lang__menu__list {
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.lang__list__item a {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Arial';
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lang__list__item.active a {
+    color: #F8F8F8;
+}
+
+.sign__in {
+    bottom: 0;
+    right: 120px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.sign__in a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sign__in p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F8F8F8;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-family: 'Assistant';
+    text-transform: capitalize;
+}
+
+@media (max-width: 991.98px) {
+    .line {
+        position: absolute;
+        width: 32px;
+        height: 4px;
+        left: 50%;
+        top: 20px;
+        background: #34C88A;
+        border-radius: 3px;
+    }
+
+    .header-desctop {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header {
+        flex-flow: row;
+    }
+
+    .header__logo {
+        flex-grow: 4;
+        text-align: center;
+        padding-left: 5%;
+    }
+
+    .header-mobile.active {
+        display: block;
+    }
+
+    .header-mobile {
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .header-mobile::before {
+        top: 0;
+        left: 0;
+        content: '';
+        opacity: 0.3;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: #000;
+    }
+
+    .mobile__menu {
+        top: 500%;
+        width: 100%;
+        position: absolute;
+        background-color: #F8F8F8;
+        opacity: 1;
+        transition: 1s all ease-in;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transform: translate(0, -100%);
+    }
+
+    .header-mobile.active .mobile__menu {
+        animation-name: openMenu;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes openMenu {
+        from {
+            top: 500%;
+        }
+
+        to {
+            top: 87%;
+        }
+    }
+
+    .mobile__list {
+        margin-top: 55px;
+    }
+
+    .mobile__list__item {
+        list-style: none;
+        border-bottom: 0.5px solid #34C88A;
+        padding: 10px;
+    }
+
+    .mobile__list__item a {
+        text-decoration: none;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #3A3A3A;
+    }
+
+    .mobile__language__menu {
+        margin-bottom: 60px;
+        padding-left: 10px;
+    }
+
+    .mobile__lang__list__item {
+        margin: 3px 5px;
+        list-style: none;
+    }
+
+    .mobile__lang__menu__list a {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        font-style: normal;
+        font-family: 'Arial';
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgba(58, 58, 58, 0.5)
+    }
+
+    .lang__list__item.active a {
+        color: #3A3A3A;
+    }
+    .mobile__sign__in {
+        bottom: 0;
+        left: 35px;
+        margin-top: 20px;
+        position: absolute;
+        display: block;
+    }
+
+    .mobile__sign__in a {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .mobile__sign__in p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #3A3A3A;
+        margin-top: 10px;
+        text-align: center;
+        font-style: normal;
+        font-family: 'Assistant';
+        text-transform: capitalize;
+    }
+
+}

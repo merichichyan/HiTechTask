@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "Country EN 1",
+            "am": "Country AM 1",
+            "ru": "Country RU 1"
+        }
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "Country EN 2",
+            "am": "Country AM 2",
+            "ru": "Country RU 2"
+        }
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "Country EN 3",
+            "am": "Country AM 3",
+            "ru": "Country RU 3"
+        }
+    },
+    {
+        "id": 4,
+        "name": {
+            "en": "Country EN 4",
+            "am": "Country AM 4",
+            "ru": "Country RU 4"
+        }
+    },
+    {
+        "id": 5,
+        "name": {
+            "en": "Country EN 5",
+            "am": "Country AM 5",
+            "ru": "Country RU 5"
+        }
+    }
+]

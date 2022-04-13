@@ -1,0 +1,35 @@
+.warning-dialog {
+    width: 450px;
+    height: 320px;
+    position: relative;
+}
+
+.warning-dialog p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #194866;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-family: 'Assistant';
+    border-bottom: 0.5px solid rgba(25, 72, 102, 0.5);
+}
+
+.continue_registration{
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+    width: 90%;
+    margin-top: 6%;
+    background: #34C88A;
+}
+
+.leave_anyway{
+    position: absolute;
+    bottom: 25%;
+    right: 6%;
+    width: 90%;
+    margin-top: 6%;
+}

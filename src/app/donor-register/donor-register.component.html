@@ -1,0 +1,99 @@
+<div class="sign-up-form">
+
+    <div class="sign-up-form-header">
+        <h1>{{'donor_reg.title.h1' | translate }}</h1>
+        <p>{{'donor_reg.title.p' | translate }}</p>
+    </div>
+
+    <form [formGroup]="sign_up_form">
+        <div class="div1">
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.name' | translate }}</mat-label>
+                <input matInput name="firstName" placeholder="{{'donor_reg.name' | translate }}"
+                    formControlName="firstName" required>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.surname' | translate }}</mat-label>
+                <input matInput name="lastName" placeholder="{{'donor_reg.surname' | translate }}"
+                    formControlName="lastName" required>
+            </mat-form-field>
+
+        </div>
+
+        <div class="div2">
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.email' | translate }}</mat-label>
+                <input matInput name="email" placeholder="{{'donor_reg.email' | translate }}" formControlName="email"
+                    required>
+            </mat-form-field>
+
+
+            <div class="phoneNumber">
+                <div class="left">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'teacher_reg.code' | translate }}</mat-label>
+                        <mat-select formControlName="phoneCode">
+                            <mat-option *ngFor="let code of getCodes()" [value]="code.id">{{code.name}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="right">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'donor_reg.phone_number' | translate }}</mat-label>
+                        <input matInput name="tell" placeholder="{{'donor_reg.phone_number' | translate }}"
+                            formControlName="tell" required>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.country' | translate }}</mat-label>
+                <mat-select disableRipple formControlName="country">
+                    <mat-option *ngFor="let country of getCountres()" [value]="country.id">
+                        {{country.name[l.getLanguage()]}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.region_state' | translate }}</mat-label>
+                <mat-select disableRipple formControlName="region">
+                    <mat-option *ngFor="let s of states" value="Lorem ipsum">{{s}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.city' | translate }}</mat-label>
+                <mat-select required formControlName="city">
+                    <input class="select__input" (keydown)="$event.stopPropagation()" (keyup)="setCity($event)">
+                    <mat-option *ngFor="let city of getCities()" [value]="city.id">{{city.name[l.getLanguage()]}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.pass' | translate }}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.conf_pass' | translate }}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmPassword" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+
+    </form>
+    <button mat-raised-button (click)="openInvalisDialog()">{{'donor_reg.ok' | translate
+        }}</button>
+    <div class="text"><a (click)="openWarningDialog()">{{'donor_reg.reg' | translate }}</a></div>
+</div>

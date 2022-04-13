@@ -1,0 +1,22 @@
+button{
+    margin-left: 80%;
+}
+
+.errorIcon {
+    color: #D80027;
+    font-size: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 10% 0 0 16%;
+}
+
+p {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D80027;
+    text-align: center;
+    align-content: center;
+}

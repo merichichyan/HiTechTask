@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "en": "City EN 1",
+            "am": "City AM 1",
+            "ru": "City RU 1"
+        }
+    },
+    {
+        "id": 2,
+        "name": {
+            "en": "City EN 2",
+            "am": "City AM 2",
+            "ru": "City RU 2"
+        }
+    },
+    {
+        "id": 3,
+        "name": {
+            "en": "City EN 3",
+            "am": "City AM 3",
+            "ru": "City RU 3"
+        }
+    },
+    {
+        "id": 4,
+        "name": {
+            "en": "City EN 4",
+            "am": "City AM 4",
+            "ru": "City RU 4"
+        }
+    },
+    {
+        "id": 5,
+        "name": {
+            "en": "City EN 5",
+            "am": "City AM 5",
+            "ru": "City RU 5"
+        }
+    }
+]

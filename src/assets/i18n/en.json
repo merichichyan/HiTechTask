@@ -1,0 +1,90 @@
+{
+    "header": {
+        "Teachers": "Teachers",
+        "Donors": "Donors",
+        "About_us": "About",
+        "Contact_us": "Contact us",
+        "Blog": "Blog",
+        "Sign_in": "Sign In",
+        "Homepage": "Homepage"
+    },
+    "sign_in": {
+        "title": {
+            "h1": "Sign In",
+            "p": "Welcome Back!"
+        },
+        "form": {
+            "email": "Enter your email ",
+            "pass": "Password",
+            "forgot_pass": "Forgot Password"
+        },
+        "successful-recovery-pass": "You've successfully recovered your password",
+        "role": {
+            "reg": "Register as a",
+            "teacher": "Teacher",
+            "donor": "Donor"
+        }
+    },
+    "teacher_reg": {
+        "title": {
+            "h1": "Sign Up",
+            "p": "It’s quick and easy."
+        },
+        "name": "First Name",
+        "surname": "Last Name",
+        "email": "Email",
+        "code": "Code",
+        "phone_number": "Phone Number",
+        "region": "Region",
+        "city_village": "City , Village",
+        "school": "School",
+        "subject": "Subject",
+        "grade": "Grade",
+        "pass": "Password",
+        "conf_pass": "Confirm Password",
+        "ok": "OK",
+        "reg": "Register as a Donor"
+    },
+    "donor_reg": {
+        "title": {
+            "h1": "Sign Up",
+            "p": "It’s quick and easy."
+        },
+        "name": "First Name",
+        "surname": "Last Name",
+        "email": "Email",
+        "code": "Code",
+        "phone_number": "Phone Number",
+        "country": "Country",
+        "region_state": "Region , State",
+        "city": "City",
+        "pass": "Password",
+        "conf_pass": "Confirm Password",
+        "ok": "OK",
+        "reg": "Register as a Teacher"
+    },
+    "recover-pass": {
+        "title": {
+            "h1": "Recover Password",
+            "p": " Please enter your email to receive a recovery code"
+        },
+        "recovery_code": "Recovery Code",
+        "done": "Done",
+        "back": "I remember my password",
+        "send": "Send"
+    },
+    "warning-dialog": {
+        "title":"If you leave this page now, all your progress will be lost",
+        "continue_registration":"Continue registration",
+        "leave_anyway":"Leave anyway"
+    },
+
+    "verify-account":{
+        "title":{
+            "h1":"Verify Account",
+            "p":"Please check your email and enter the recovery code"
+        },
+        "code":"Code",
+        "ok":"OK"
+    }
+}

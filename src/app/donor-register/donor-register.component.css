@@ -1,0 +1,167 @@
+.sign-up-form {
+    width: 20%;
+    height: 66%;
+    position: absolute;
+    left: 40%;
+    padding-bottom: 100px;
+    box-shadow: 0px 1px 24px rgba(61, 61, 61, 0.18);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.sign-up-form-header {
+    width: 90%;
+    height: 70px;
+    margin-left: 6%;
+    margin-top: 3%;
+    border-bottom: 0.5px solid rgba(25, 72, 102, 0.5);
+}
+
+.sign-up-form-header h1 {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #194866;
+}
+
+.sign-up-form-header p {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #194866;
+}
+
+.div1 {
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.div1 mat-form-field {
+    width: 48%;
+    font-size: 10px;
+}
+
+.div2 mat-form-field {
+    width: 90%;
+    margin-left: 6%;
+    font-size: 10px;
+}
+
+.select__input {
+    width: 100%;
+    border: 0.1px solid rgba(25, 72, 102, 0.5);
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+button {
+    width: 10%;
+    margin-right: 6%;
+    margin-top: 9%;
+    background: #34C88A;
+    float: right;
+}
+
+.text {
+    width: 60%;
+    margin-top: 15%;
+    margin-left: 6%;
+    text-align: left;
+    float: left;
+    cursor: pointer;
+}
+
+.text a {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #34C88A;
+}
+
+.phoneNumber {
+    width: 90%;
+    display: flex;
+    margin-left: 6%;
+}
+
+.right {
+    width: 75%;
+}
+
+ .left {
+    width: 25%;
+}
+
+.phoneNumber .left mat-form-field {
+    width: 100%;
+    margin-left: 0;
+}
+
+.phoneNumber .right mat-form-field {
+    width: 100%;
+    margin-left: 0
+}
+
+
+@media (max-width: 991.98px) {
+
+    .sign-up {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .sign-up-form {
+        width: 100%;
+        height: 90%;
+        left: 0;
+        padding-bottom: 0;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .sign-up-form-header h1 {
+        font-size: 20px;
+    }
+
+    .sign-up-form-header p {
+        font-size: 12px;
+    }
+
+
+    .text {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    button {
+        width: 88%;
+        margin-top: 6%;
+        margin-bottom: 2%;
+        background: #34C88A;
+        margin-right: 5%;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .right{
+        width:60%
+    }
+}

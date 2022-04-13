@@ -1,0 +1,41 @@
+<div class="recover-pass">
+    <div class="recover-pass-form">
+        <div class="recover-pass-header">
+            <h1>{{'recover-pass.title.h1' | translate }}</h1>
+            <p>{{'recover-pass.title.p' | translate }}</p>
+        </div>
+
+        <form [formGroup]="form">
+            <mat-form-field appearance="fill">
+                <mat-label>{{'recover-pass.recovery_code' | translate }}</mat-label>
+                <input matInput name="email" placeholder="{{'recover-pass.recovery_code' | translate }}" required>
+            </mat-form-field>
+
+            <a href="#">{{'recover-pass.recovery_code' | translate }}</a>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.pass' | translate }}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{'donor_reg.conf_pass' | translate }}</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="confirmPassword" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </form>
+
+        <button class="done" mat-raised-button routerLink="/sign-in" (click)="s.rec_pass=true">{{'recover-pass.done' |
+            translate }}</button>
+        <button class="back" mat-raised-button routerLink="/sign-in">{{'recover-pass.back' | translate }}</button>
+
+    </div>
+</div>

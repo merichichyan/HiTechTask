@@ -1,0 +1,66 @@
+<header class="header">
+    <div class="header__logo">
+        <img src="../../assets/header/logo.png" alt="">
+    </div>
+
+    <div class="header__burger" (click)="openMobileMenu()">
+        <img src="../../assets/header/burger-header.png" alt="">
+    </div>
+
+
+    <div class="header-desctop">
+        <div class="header__menu">
+            <ul class="menu__list">
+                <li class="list__item active"><a routerLink="/teacher-register">{{ 'header.Teachers' | translate }}</a>
+                </li>
+                <li class="list__item"><a routerLink="/donor-register">{{ 'header.Donors' | translate }}</a></li>
+                <li class="list__item"><a href="#">{{ 'header.About_us' | translate }}</a></li>
+                <li class="list__item"><a href="#">{{ 'header.Contact_us' | translate }}</a></li>
+                <li class="list__item"><a href="#">{{ 'header.Blog' | translate }}</a></li>
+            </ul>
+        </div>
+
+        <div class="language__menu">
+            <ul class="lang__menu__list">
+                <li *ngFor="let lang of l.languages" class="lang__list__item" [class.active]="l.getLanguage() == lang.l"
+                    (click)="l.useLanguage(lang.l)"><a href="#">{{lang.t}}</a></li>
+            </ul>
+        </div>
+
+        <div class="sign__in">
+            <a (click)="openWarningDialog()">
+                <img src="../../assets/header/sign_in.png">
+                <p>{{ 'header.Sign_in' | translate }}</p>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="header-mobile {{ mobileMenuVisible }}">
+    <div class="mobile__menu">
+        <div class="line"></div>
+        <ul class="mobile__list">
+            <li class="mobile__list__item"><a href="#">{{ 'header.Homepage' | translate }}</a></li>
+            <li class="mobile__list__item"><a href="#">{{ 'header.Teachers' | translate }}</a></li>
+            <li class="mobile__list__item"><a href="#">{{ 'header.Donors' | translate }}</a></li>
+            <li class="mobile__list__item"><a href="#">{{ 'header.About_us' | translate }}</a></li>
+            <li class="mobile__list__item"><a href="#">{{ 'header.Contact_us' | translate }}</a></li>
+            <li class="mobile__list__item"><a href="#">{{ 'header.Blog' | translate }}</a></li>
+        </ul>
+
+        <div class="mobile__language__menu">
+            <ul class="mobile__lang__menu__list">
+                <li *ngFor="let lang of l.languages" class="lang__list__item" [class.active]="l.getLanguage() == lang.l"
+                    (click)="l.useLanguage(lang.l)"><a href="#">{{lang.t}}</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile__sign__in">
+            <a routerLink="/sign-in">
+                <img src="../../assets/header/mobile-sign-in.png">
+                <p>{{ 'header.Sign_in' | translate }}</p>
+            </a>
+        </div>
+
+    </div>
+</div>
